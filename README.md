@@ -49,25 +49,25 @@ Often I also put in a line to use a specific version of node.
 You can create an `.nvmrc` file containing version number in the project root directory (or any parent directory).
 `nvm use`, `nvm install`, `nvm exec`, `nvm run`, and `nvm which` will all respect an `.nvmrc` file when a version is not supplied.
 
-To download, compile, and install the latest v0.10.x release of node, do this:
+To download, compile, and install the latest v0.12.x release of node, do this:
 
-    nvm install 0.10
+    nvm install 0.12
 
 And then in any new shell just use the installed version:
 
-    nvm use 0.10
+    nvm use 0.12
 
 Or you can just run it:
 
-    nvm run 0.10 --version
+    nvm run 0.12 --version
 
 Or, you can run any arbitrary command in a subshell with the desired version of node:
 
-    nvm exec 0.10 node --version
+    nvm exec 0.12 node --version
 
 You can also get the path to the executable to where it was installed:
 
-    nvm which 0.10
+    nvm which 0.12
 
 In place of a version pointer like "0.10", you can use the special default aliases "stable" and "unstable":
 
@@ -104,7 +104,7 @@ To set a default Node version to be used in any new shell, use the alias 'defaul
 To use a mirror of the node binaries, set `$NVM_NODEJS_ORG_MIRROR`:
 
     export NVM_NODEJS_ORG_MIRROR=https://nodejs.org/dist
-    nvm install 0.10
+    nvm install 0.12
 
     NVM_NODEJS_ORG_MIRROR=https://nodejs.org/dist nvm install 0.10
 
